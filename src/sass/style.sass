@@ -12,6 +12,9 @@
     font-weight: 300
     text-transform: uppercase
     text-align: center
+    &_light
+        background-color: #ffffff
+        color: #070716
 
 .title
     margin-top: 38px
@@ -21,14 +24,19 @@
     font-weight: 700
     text-transform: uppercase
     text-align: center
+    &_light
+        color: #ffffff
 
 .subtitle
     margin-top: 19px
+    margin-bottom: 0 
     color: #080808
     font-size: 17px
     font-weight: 400
     line-height: 21px
     text-align: center
+    &_light
+        color: #ffffff
 
 header
     position: relative
@@ -40,21 +48,21 @@ nav
     width: 100%
     z-index: 1
 
-.nav_list
-    display: flex
-    justify-content: space-between
-    list-style: none
-    padding: 13px 70px
-    margin: 0
+    .nav_list
+        display: flex
+        justify-content: space-between
+        list-style: none
+        padding: 13px 70px
+        margin: 0
 
-    .nav_item
-        border-right: 2px dotted #000000
-        padding-right: 28px
+        .nav_item
+            border-right: 2px dotted #000000
+            padding-right: 28px
 
-    .nav_link
-        color: #ffffff
-        font-size: 15px
-        font-weight: 300
+        .nav_link
+            color: #ffffff
+            font-size: 15px
+            font-weight: 300
 
 .subheader
     position: absolute
@@ -199,18 +207,23 @@ nav
             font-weight: 300
             line-height: 21px
             text-align: justify
+
 .app
-    height: 864px
+    min-height: 864px
     background: url('../img/app_bg.jpg') center (center / cover) no-repeat
     padding: 48px 0 80px 0
+    .row
+        margin-top: 32px
+
     &_item
+        position: relative
         width: 320px
         height: 280px
-        margin: 32px auto 0
-        padding-bottom: 19px
+        margin: 0 auto
+        margin-bottom: 19px
+        padding-top: 92px 
         &_1
             background: url('../img/app/app_1.jpg') center (center / cover) no-repeat
-            height: 280px
         &_2
             background: url('../img/app/app_2.jpg') center (center / cover) no-repeat
         &_3
@@ -226,4 +239,40 @@ nav
         font-size: 24px
         font-weight: 400
         text-transform: uppercase
+        text-align: center
+    &_plus
+        width: 26px
+        height: 26px
+        position: absolute
+        bottom: 35px
+        right: 50%
+        transform: translateX(50%)
+        background-color: #000000
+        border-radius: 100%
+        text-align: center
+
+.car
+    position: relative
+    min-height: 895px
+    padding: 57px 0 138px 0
+    background: url('../img/car_bg_light.jpg') center (center / cover) no-repeat
+    .car_img
+        position: relative
+        display: block
+        margin: 0 auto
+        margin-top: 56px
+        z-index: 2
+    .car_light_text
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        text-align: center
+    .car_dark
+        position: absolute
+        top: 0
+        left: 0
+        height: 499px
+        width: 100%
+        background-color: #070716
+        z-index: 1
 
