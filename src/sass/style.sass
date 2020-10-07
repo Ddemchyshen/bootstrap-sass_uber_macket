@@ -307,13 +307,18 @@ nav
     padding: 68px 0 84px
     &_item
         margin: 33px 0
+        padding-left: 50px
         &_title
             color: #1ca8c3
             font-size: 22px
             font-weight: 400
         &_list
+            position: relative
             margin-top: 20px
+            .no-mb
+                margin-bottom: 0
             li 
+                margin-bottom: 22px
                 color: #222222
                 font-size: 17px
                 font-weight: 300
@@ -321,6 +326,8 @@ nav
                 list-style: none
                 &:before
                     content: ''
+                    position: absolute
+                    left: 11px
                     display: block
                     width: 21px
                     height: 20px
@@ -330,3 +337,10 @@ nav
             color: #1ca8c3
             font-size: 17px
             font-weight: 300
+    .red_part
+        .condition_item_title
+            color: $color_red
+        .condition_item_list
+            li
+                &:before
+                    background: url('../icons/red_mark.png') center (center / cover) no-repeat
