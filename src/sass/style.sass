@@ -344,3 +344,84 @@ nav
             li
                 &:before
                     background: url('../icons/red_mark.png') center (center / cover) no-repeat
+
+.map
+    position: relative
+    height: 873px
+    padding-top: 49px
+    background: url('../img/map.jpg') center (center / cover) no-repeat
+    &_text
+        position: absolute
+        bottom: 205px
+        left: 50%
+        transform: translateX(-50%)
+        color: #1fbad6
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+
+footer
+    position: relative
+    .footer
+        width: 100%
+        position: absolute
+        bottom: 20px
+        padding: 14px 0 31px 0
+        background-color: #fff
+        &_divider
+            width: 299px
+            height: 4px
+            margin: 0 auto
+            background-color: #1fbad6
+        &_wrapper
+            margin-top: 32px
+            padding: 0 23px
+            display: flex
+            justify-content: space-between
+        &_social
+            width: 200px
+            display: flex
+            align-items: center
+            &_border
+                width: 32px
+                height: 32px
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-right: 9px
+                background-color: #070716
+                border-radius: 100%
+            &_ico
+                color: #ffffff
+
+        &_navigation
+            display: flex
+            flex-direction: column
+            align-items: center
+            &_big a
+                margin-right: 45px
+                color: #070716
+                font-size: 15px
+                font-weight: 300
+                text-transform: uppercase
+            &_small a
+                margin-top: 15px
+                margin-right: 22px
+                color: #999999
+                font-size: 11px
+                font-weight: 300
+                text-transform: uppercase
+        &_stores
+            width: 200px
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            img
+                padding-left: 8px
+        &_text
+            margin-top: 19px
+            color: #1fbad6
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
