@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uber with Bootstrap</title>
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -12,19 +13,17 @@
 </head>
 <body>
     <script src="js/script.js"></script>
-    <header>
+    <header id="main">
         <nav>
             <div class="container">
-                <!-- <div class="nav"> -->
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="#" class="nav_link">Главная</a></li>
-                        <li class="nav_item"><a href="#" class="nav_link">Со своим автомобилем</a></li>
-                        <li class="nav_item"><a href="#" class="nav_link">На автомобиле компании</a></li>
-                        <li class="nav_item"><a href="#" class="nav_link">Требования</a></li>
-                        <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
-                        <li class="nav_item"><a href="#" class="nav_link">Оставить заявку</a></li>
-                    </ul>    
-                <!-- </div> -->
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#main" class="nav_link">Главная</a></li>
+                    <li class="nav_item"><a href="#with_car" class="nav_link">Со своим автомобилем</a></li>
+                    <li class="nav_item"><a href="#without_car" class="nav_link">На автомобиле компании</a></li>
+                    <li class="nav_item"><a href="#demand" class="nav_link">Требования</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Оставить заявку</a></li>
+                </ul>    
             </div>
             <div class="hamburger">
                 <span></span>
@@ -223,7 +222,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="condition_item">
-                        <div class="condition_item_title">УСЛОВИЯ (со своим авто):</div>
+                        <div class="condition_item_title" id="with_car">УСЛОВИЯ (со своим авто):</div>
                         <ul class="condition_item_list">
                             <li>Подключаем к системе UBER под 10%</li>
                             <li>Никаких взносов - 0%!</li>
@@ -238,7 +237,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="condition_item">
-                        <div class="condition_item_title">УСЛОВИЯ (на авто компании):</div>
+                        <div class="condition_item_title" id="without_car">УСЛОВИЯ (на авто компании):</div>
                         <ul class="condition_item_list">
                             <li>Предоставляем авто без залога</li>
                             <li>Без ежедневных выплат по аренде</li>
@@ -249,7 +248,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="condition_item no-mb red_part">
-                        <div class="condition_item_title">ТРЕБОВАНИЕ:</div>
+                        <div class="condition_item_title" id="demand">ТРЕБОВАНИЕ:</div>
                         <ul class="condition_item_list">
                             <li>Наличие автомобиля без рекламы</li>
                             <li>Автомобиль не должен быть желтый и не с желтыми номерами</li>

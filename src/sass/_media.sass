@@ -87,11 +87,15 @@
             &_active
                 left: 0
         &_item
+            width: 100%
+            text-align: center
+            padding: 6px 0
             border: none
-            padding: 0
-            margin: 10px 0
+            margin: 8px 0
         &_link
             font-size: 16px
+            display: block
+
     .hamburger
         display: block
         position: absolute
@@ -129,10 +133,16 @@
             width: 85%
             display: block
             margin: 10px auto 0
+            &:hover
+                background-image: linear-gradient(to top, $color_blue 0%, #4ce2ff 100%)
     .promo
         &_header
             line-height: 47px
             margin-top: 30px
+        &_btn
+            &:hover
+                background-image: linear-gradient(to top, $color_blue 0%, #4ce2ff 100%)
+
     .advantage
         &_item
             &_descr
