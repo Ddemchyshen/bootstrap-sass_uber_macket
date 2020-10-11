@@ -56,14 +56,16 @@
             &_wrapper
                 padding: 0 10px
             &_navigation
-                &_big a
-                    margin-right: 20px
-                    &:last-child
-                        margin-right: 0
-                &_small a
-                    margin-right: 4px
-                    &:last-child
-                        margin-right: 0
+                &_big 
+                    a
+                        margin-right: 20px
+                        &:last-child
+                            margin-right: 0
+                &_small 
+                    a
+                        margin-right: 4px
+                        &:last-child
+                            margin-right: 0
             &_stores
                 display: flex
                 flex-direction: column
@@ -114,8 +116,185 @@
                     display: none
                 &:nth-child(3)
                     transform: translateY(6px) rotate(45deg)
-
-                
-
-    
-
+    .xs-hide
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        &_number
+            display: block
+            margin: 12px auto 0
+            text-align: center
+        &_btn
+            width: 85%
+            display: block
+            margin: 10px auto 0
+    .promo
+        &_header
+            line-height: 47px
+            margin-top: 30px
+    .advantage
+        &_item
+            &_descr
+                width: 100%
+                padding-left: 0
+            &_header
+                text-align: center
+    .app   
+        &_item
+            width: 100%
+    .car
+        &_img
+            width: 100%            
+            left: 0
+    .map
+        &_text
+            bottom: 287px
+    footer
+        .xs-hide
+            display: none
+        .footer
+            &_wrapper
+                margin-top: 20px
+                justify-content: center
+            &_wrapper2
+                margin-top: 22px
+                display: flex
+                flex-direction: column
+                align-items: center
+                &_social
+                    display: flex
+                &_stores 
+                    margin-top: 20px          
+@media (max-width: 575px)
+    .title 
+        font-size: 16px
+        margin-top: 15px
+        line-height: 16px
+    .subtitle 
+        font-size: 14px
+        line-height: 21px
+        margin-top: 11px
+    nav
+        height: 30px
+    .nav
+        &_list
+            width: 80%
+    .subheader
+        height: 60px
+        top: 30px
+        &_logo
+            margin-top: 6px
+            &_text
+                display: none
+        &_number
+            margin-top: 11px
+            font-size: 14px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 6px
+    .promo 
+        min-height: 400px
+        padding: 93px 0 35px 0
+        &_text
+            display: none
+        &_header
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            margin-top: 33px
+            padding: 0 10px
+            line-height: 30px
+        &_btn 
+            width: 210px
+            height: 50px
+            margin-top: 72px
+            font-size: 16px
+    .advantage
+        padding: 22px 0 36px 0
+        &_item
+            margin-top: 26px
+            &_border
+                width: 100px
+                height: 100px   
+            &_descr
+                margin-top: 27px
+            &_header
+                font-size: 16px
+            &_text
+                margin-top: 0
+    .app
+        padding: 23px 0 43px
+        background-color: $color_blue
+    .car
+        padding: 24px 0 34px
+        min-height: 390px
+        background-image: none
+        background-color: #070716
+        .title
+            display: none
+        .subtitle
+            display: none
+        &_dark
+            display: none
+        &_img
+            margin-top: 35px
+        &_light
+            &_text
+                margin-top: 26px
+                color: #ffffff
+    .condition
+        padding: 26px 0 
+        &_item
+            margin: 0
+            padding: 0
+            &_title
+                margin-top: 24px
+                font-size: 20px
+    .map
+        padding-top: 24px
+        min-height: 360px
+        &_text
+            bottom: 33px
+            a
+                font-size: 12px
+    footer
+        position: static
+        padding: 26px 0 22px
+        .footer
+            position: static
+            &_divider
+                width: 80%
+            &_navigation
+                &_big 
+                    a
+                        margin-right: 15px
+                        font-size: 14px
+                &_small 
+                    display: flex
+                    justify-content: center
+                    flex-wrap: wrap
+                    a
+                        display: block
+                        margin-top: 12px
+                        margin-right: 5px
+                        font-size: 10px
+            &_text
+                margin-top: 14px
+    .hamburger
+        width: 22px
+        height: 12px
+        span
+            height: 2px
+            margin-bottom: 2px
+        &_active
+            span
+                margin-bottom: -2px
+    .xs-hide
+        display: none
+    .xs-visible
+        display: block
